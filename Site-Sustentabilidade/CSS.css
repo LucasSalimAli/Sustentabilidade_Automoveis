@@ -1,0 +1,187 @@
+/* Menu */
+
+
+
+#menu,
+#menu ul {
+    margin: 0;
+    /* margin inicial */
+    padding: 0;
+    /* espaço de dentro */
+    list-style: none;
+    /* Ícones da lista */
+}
+
+
+#menu {
+    width: 90%;
+    /*largura*/
+    margin: 80px auto;
+    /*margin top/bottom left/right*/
+    border: 1px solid#222;
+    /*borda*/
+    background-color: #111;
+    /*cor de fundo fixa*/
+    background-image: linear-gradient(#000000, #431fa7);
+    /*efeito*/
+    border-radius: 6px;
+    /*formato do canto*/
+    box-shadow: 0 1px 1px #777;
+    /*sombreamento*/
+    zoom: 1;
+    /*altera a escala*/
+}
+
+
+#menu li {
+    float: left;
+    /*elementos flutuantes, referência p/ esquerda*/
+    border-right: 1px solid #222;
+    /* borda direita */
+    box-shadow: 1px 0 0 #444;
+    /* sombra */
+    position: relative;
+    /* posição relativa */
+}
+
+
+#menu a {
+    float: left;
+    /*elementos flutuantes, altera padding*/
+    padding: 12px 30px;
+    /*Espaço dos elementos internos*/
+    color: #999;
+    /*cor texto*/
+    text-transform: uppercase;
+    /*MAIÚSCULAS*/
+    font: bold 12px Arial, Helvetica;
+    /*fonte*/
+    text-decoration: none;
+    /*nenhum estilo adicional*/
+    text-shadow: 0 1px 0 #000;
+    /*sombra texto*/
+}
+
+
+#menu ul {
+    /* elementos ul dentro do #menu */
+    opacity: 0;
+}
+
+
+#menu ul {
+    /* elementos ul dentro do #menu */
+    opacity: 0;
+    /*totalmente transparente*/
+    margin: 20px 0 0 0;
+    visibility: hidden;
+    /*invisível*/
+    Position: absolute;
+    /*elementos vão respeitar a margin/top/left*/
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    /* elemento vai para uma camada acima */
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, .3);
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    /*efeito de animação*/
+}
+
+
+#menu li:hover>ul {
+    /* faz o menu aparecer */
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+
+#menu li:hover>a {
+    /* todos os elementos <a> dentro de <li> */
+    color: #fafafa;
+    /* modifica texto passando mouse */
+}
+
+
+#menu ul li {
+    /* <li> do submenu */
+    float: none;
+    display: block;
+    border: 0;
+    box-shadow: 0 1px #111, 0 2px #666;
+}
+
+
+#menu ul a {
+    /* <a> (links) do submenu */
+    padding: 10px;
+    width: 130px;
+    display: block;
+    white-space: nowrap;
+    /*não permitir quebras de linha*/
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba)
+}
+
+
+#menu::before,
+/* primeiro pseudo-elemento do menu */
+#menu::after {
+    /* último pseudo-elemento do menu */
+    content: "";
+    /* eliminar todo conteúdo */
+    display: block;
+    /* permitir visibilidade */
+    /* não permitir elementos flutuantes
+à esquerda ou direita do elemento */
+    clear: both;
+}
+
+
+/* BORDA "ONDULADA" NO PRIMEIRO ITEM DO SUBMENU */
+#menu ul li:first-child>a {
+    border-radius: 3px 3px 0 0;
+}
+
+/* CRIAR UM TRIANGULO NO PRIMEIRO ITEM */
+#menu ul li:first-child>a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+
+
+#menu ul ul {
+    top: 0px;
+    left: 151px;
+}
+
+#menu ul li:first-child>a:after {
+    border: 0px;
+}
+
+
+#menu ul ul li:hover>a:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #0186ba;
+    transform: rotate(-90deg);
+}
+
+/* Menu */
+
