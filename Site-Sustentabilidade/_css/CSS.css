@@ -14,17 +14,14 @@
 
 
 #menu {
-    width: 90%;
+    width: 95%;
     /*largura*/
     margin: 80px auto;
     /*margin top/bottom left/right*/
     border: 1px solid#222;
     /*borda*/
-    background-color: #111;
-    /*cor de fundo fixa*/
-    background-image: linear-gradient(#000000, #431fa7);
-    /*efeito*/
-    border-radius: 6px;
+    background-color: rgb(28, 114, 171);
+    border-radius: 4px;
     /*formato do canto*/
     box-shadow: 0 1px 1px #777;
     /*sombreamento*/
@@ -37,7 +34,7 @@
 #menu li {
     float:left;
     /*elementos flutuantes, referência p/ esquerda*/
-    border-right: 1px solid #222;
+    border-right: 1px solid #9a0202;
     /* borda direita */
     box-shadow: 1px 0 0 #444;
     /* sombra */
@@ -51,7 +48,7 @@
     /*elementos flutuantes, altera padding*/
     padding: 12px 30px;
     /*Espaço dos elementos internos*/
-    color: #999;
+    color: #221f1f;
     /*cor texto*/
     text-transform: uppercase;
     /*MAIÚSCULAS*/
@@ -59,7 +56,7 @@
     /*fonte*/
     text-decoration: none;
     /*nenhum estilo adicional*/
-    text-shadow: 0 1px 0 #000;
+
     /*sombra texto*/
 }
 
@@ -86,13 +83,18 @@
     left: 0;
     z-index: 1;
     /* elemento vai para uma camada acima */
-    background: linear-gradient(#444, #111);
+    background-color:#804e03;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, .3);
     border-radius: 3px;
     transition: all .2s ease-in-out;
     /*efeito de animação*/
 }
 
+
+#menu li:hover{
+
+	background-color: #b56e02;
+}
 
 #menu li:hover>ul {
     /* faz o menu aparecer */
@@ -122,13 +124,13 @@
 #menu ul a {
     /* <a> (links) do submenu */
     padding: 10px;
-    width: 130px;
+    width: auto;
     display: block;
     white-space: nowrap;
     /*não permitir quebras de linha*/
     float: none;
     text-transform: none;
-    font: bold 40px Arial, Helvetica;
+    font: bold 23px Arial, Helvetica;
 }
 
 #menu ul a:hover {
@@ -170,7 +172,7 @@
 
 #menu ul ul {
     top: 0px;
-    left: 151px;
+    left: 100%;
 }
 
 #menu ul li:first-child>a:after {
@@ -196,6 +198,54 @@
 }
 
 /* Menu */
+
+header {
+
+	background-color: #121111;
+
+}
+
+body {
+
+	background-color: rgb(182, 211, 244);
+}
+
+#table1{
+
+	background-color: rgba(7, 67, 107, 0.517); 
+	width: 1670px;
+
+}
+
+#table2{
+
+	background-color:#FF9A00; 
+	width: 1670px; 
+	border-color: black;
+}
+
+#pr{
+
+	font-size: 23px;
+}
+
+#prtl{
+
+	font-size: 35px; 
+	font-weight: bold;
+}
+
+#td1{
+
+	width: 10%; 
+	background-color:rgb(28, 114, 171) ;
+}
+
+#td2{
+
+	width: 20%; 
+	background-color: #c97d0a;
+}
 
 /* Títulos e Parágrafos */
 
