@@ -214,6 +214,7 @@ body {
 
 	background-color: rgba(7, 67, 107, 0.517); 
 	width: 1670px;
+    
 
 }
 
@@ -245,6 +246,12 @@ body {
 
 	width: 20%; 
 	background-color: #c97d0a;
+}
+
+h1 {
+    text-align: center;
+    color: #6e4301;
+    border: violet 1px;
 }
 
 /* Títulos e Parágrafos */
