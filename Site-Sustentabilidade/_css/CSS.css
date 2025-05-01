@@ -105,8 +105,83 @@
 #infra a{
 
     color: #fafafa;
+
+}
+
+#mdo{
+
+    background-color: #b56e02;
     
 }
+
+#mdo a{
+
+    color: #fafafa;
+
+}
+
+#ambi{
+
+    background-color: #b56e02;
+    
+}
+
+#ambi a{
+
+    color: #fafafa;
+
+}
+
+
+#econ{
+
+    background-color: #b56e02;
+    
+}
+
+#econ a{
+
+    color: #fafafa;
+
+}
+
+#micro{
+
+    background-color: #b56e02;
+    
+}
+
+#micro a{
+
+    color: #fafafa;
+
+}
+
+
+#test{
+
+    background-color: #b56e02;
+    
+}
+
+#test a{
+
+    color: #fafafa;
+
+}
+
+#ve{
+
+    background-color: #b56e02;
+    
+}
+
+#ve a{
+
+    color: #fafafa;
+
+}
+
 
 #menu li:hover>ul {
     /* faz o menu aparecer */
